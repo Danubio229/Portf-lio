@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danubio Souza | Desenvolvedor Full Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #020617);
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      border: 4px solid #38bdf8;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header span { color: #38bdf8; }
+    header p { margin: 1rem 0 2rem; color: #94a3b8; }
+    .btn {
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
+    }
+    .project-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      margin-top: 15px;
+    }
+    .btn:hover { background: #0ea5e9; }
+    section { padding: 80px 10%; }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .about p { max-width: 800px; margin: auto; text-align: center; color: #cbd5f5; }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(56,189,248,0.1);
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card h3 { color: #38bdf8; margin-bottom: 10px; }
+    .card p { color: #cbd5f5; }
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      background: #020617;
+      color: #94a3b8;
+    }
+    footer a { color: #38bdf8; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <img class="profile-img" src="https://avatars.githubusercontent.com/u/239798455?s=400&u=ef22be9f9c19c61c85ab6ca3111a9e4d24824771&v=4" alt="Danubio Souza">
+    <h1>Danubio <span>Souza</span></h1>
+    <p>Desenvolvedor Full Stack | Node.js | React | JavaScript</p>
+    <a href="#projects" class="btn">Ver Projetos</a>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <h2>Sobre Mim</h2>
+  <p>
+    Sou Desenvolvedor Full Stack com experiência no desenvolvimento de aplicações web completas,
+    atuando no front-end e no back-end. Possuo conhecimentos sólidos em JavaScript, Node.js,
+    React, HTML, CSS e bancos de dados. Busco minha primeira oportunidade na área de tecnologia
+    para evoluir e contribuir com soluções eficientes.
+  </p>
+</section>
+
+<section>
+  <h2>Tecnologias</h2>
+  <div class="skills">
+    <div class="card"><h3>Front-end</h3><p>HTML5, CSS3, JavaScript, React.js</p></div>
+    <div class="card"><h3>Back-end</h3><p>Node.js, Express, APIs REST</p></div>
+    <div class="card"><h3>Banco de Dados</h3><p>MySQL, PostgreSQL, MongoDB, Prisma ORM</p></div>
+    <div class="card"><h3>Outros</h3><p>Git, GitHub, Docker (noções), Scrum</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projetos</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>🍔 Hamburgueria</h3>
+      <p>Sistema de pedidos com foco em experiência do usuário.</p>
+      <a class="btn project-btn" href="https://danubio229.github.io/hamburgueria-/" target="_blank">Ver Projeto</a>
+    </div>
+    <div class="card">
+      <h3>🎮 Jogo do Mario</h3>
+      <p>Jogo desenvolvido em JavaScript com lógica e eventos.</p>
+      <a class="btn project-btn" href="https://danubio229.github.io/Jogo-do-Mario/" target="_blank">Ver Projeto</a>
+    </div>
+    <div class="card">
+      <h3>✊✋✌️ Jokenpô</h3>
+      <p>Jogo interativo de pedra, papel e tesoura.</p>
+      <a class="btn project-btn" href="https://danubio229.github.io/Jokenp-/" target="_blank">Ver Projeto</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>📧 danubio.holanda.9@gmail.com | 
+    <a href="https://github.com/Danubio229" target="_blank">GitHub</a> | 
+    <a href="https://www.linkedin.com/in/danubio-souza-a44569358/" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+</body>
+</html>
